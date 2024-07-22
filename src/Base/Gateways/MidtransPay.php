@@ -1,12 +1,12 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Illuminate\Support\Str;
-use BookPanda\PaymentGateway\Base\GlobalCurrency;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Base\GlobalCurrency;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 
 class MidtransPay extends PaymentGatewayBase
 {

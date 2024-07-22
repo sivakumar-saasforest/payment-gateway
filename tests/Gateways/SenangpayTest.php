@@ -1,10 +1,10 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Tests\Gateways;
+namespace SyncMaster\PaymentGateway\Tests\Gateways;
 
-use BookPanda\PaymentGateway\Base\Gateways\Senangpay;
-use BookPanda\PaymentGateway\Base\Gateways\ZitoPay;
-use BookPanda\PaymentGateway\Tests\TestCase;
+use SyncMaster\PaymentGateway\Base\Gateways\Senangpay;
+use SyncMaster\PaymentGateway\Base\Gateways\ZitoPay;
+use SyncMaster\PaymentGateway\Tests\TestCase;
 
 class SenangpayTest extends TestCase
 {

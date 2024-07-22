@@ -1,12 +1,12 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
-use BookPanda\PaymentGateway\Base\GlobalCurrency;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Base\GlobalCurrency;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
 use Unicodeveloper\Paystack\Facades\Paystack;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 
 
 class PaystackPay extends PaymentGatewayBase

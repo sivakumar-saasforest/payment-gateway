@@ -1,14 +1,14 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use Instamojo\Instamojo;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\IndianCurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\IndianCurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 
 class InstamojoPay extends PaymentGatewayBase
 {

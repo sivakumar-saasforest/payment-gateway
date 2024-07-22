@@ -1,12 +1,12 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Illuminate\Support\Facades\Config;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
-use BookPanda\PaymentGateway\Traits\ZarCurrencySupport;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Traits\ZarCurrencySupport;
 
 
 class PayFastPay extends PaymentGatewayBase

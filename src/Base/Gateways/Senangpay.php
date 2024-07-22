@@ -1,19 +1,19 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
-use BookPanda\PaymentGateway\Base\PaymentGatewayHelpers;
-use BookPanda\PaymentGateway\Base\RecurringSupport;
-use BookPanda\PaymentGateway\Facades\XgPaymentGateway;
-use BookPanda\PaymentGateway\Traits\ConvertUsdSupport;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\IndianCurrencySupport;
-use BookPanda\PaymentGateway\Traits\MyanmarCurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayHelpers;
+use SyncMaster\PaymentGateway\Base\RecurringSupport;
+use SyncMaster\PaymentGateway\Facades\XgPaymentGateway;
+use SyncMaster\PaymentGateway\Traits\ConvertUsdSupport;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\IndianCurrencySupport;
+use SyncMaster\PaymentGateway\Traits\MyanmarCurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 use CinetPay\CinetPay as CinetPayment;
 
 class Senangpay extends PaymentGatewayBase implements RecurringSupport

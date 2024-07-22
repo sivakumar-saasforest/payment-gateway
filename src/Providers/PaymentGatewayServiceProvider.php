@@ -1,12 +1,12 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Providers;
+namespace SyncMaster\PaymentGateway\Providers;
 
-use BookPanda\PaymentGateway\Base\PaymentGatewayHelpers;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayHelpers;
 use Filament\Panel;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use BookPanda\PaymentGateway\PaymentGatewayPlugin;
+use SyncMaster\PaymentGateway\PaymentGatewayPlugin;
 
 class PaymentGatewayServiceProvider extends ServiceProvider
 {

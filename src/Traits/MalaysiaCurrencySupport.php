@@ -1,8 +1,8 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Traits;
+namespace SyncMaster\PaymentGateway\Traits;
 
-use BookPanda\PaymentGateway\Base\GlobalCurrency;
+use SyncMaster\PaymentGateway\Base\GlobalCurrency;
 
 trait MalaysiaCurrencySupport
 {

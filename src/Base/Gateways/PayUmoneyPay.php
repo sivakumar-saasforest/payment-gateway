@@ -1,12 +1,12 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 // use Tzsk\Payu\Concerns\Attributes;
 // use Tzsk\Payu\Concerns\Customer;
 // use Tzsk\Payu\Concerns\Transaction;
 // use Tzsk\Payu\Facades\Payu;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
 
 class PayUmoneyPay extends PaymentGatewayBase
 {

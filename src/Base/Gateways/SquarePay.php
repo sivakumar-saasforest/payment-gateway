@@ -1,8 +1,8 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
-use  BookPanda\PaymentGateway\Base\PaymentGatewayBase;
+use  SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
 use Square\SquareClient;
 use Square\Environment;
 use Square\Exceptions\ApiException;
@@ -11,8 +11,8 @@ use Square\Models\CreateOrderRequest;
 use Square\Models\CreateCheckoutRequest;
 use Square\Models\Order;
 use Square\Models\OrderLineItem;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 
 class SquarePay extends PaymentGatewayBase
 {

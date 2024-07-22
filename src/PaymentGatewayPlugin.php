@@ -1,6 +1,6 @@
 <?php
 
-namespace BookPanda\PaymentGateway;
+namespace SyncMaster\PaymentGateway;
 
 use Filament\Panel;
 use Filament\Contracts\Plugin;
@@ -16,7 +16,7 @@ class PaymentGatewayPlugin implements Plugin
     {
         $panel->discoverResources(
             in: __DIR__ . '/Filament/Resources',
-            for: 'BookPanda\\PaymentGateway\\Filament\\Resources'
+            for: 'SyncMaster\\PaymentGateway\\Filament\\Resources'
         );
     }
 

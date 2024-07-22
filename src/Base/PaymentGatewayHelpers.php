@@ -1,36 +1,36 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base;
+namespace SyncMaster\PaymentGateway\Base;
 
-use BookPanda\PaymentGateway\Base\Gateways\AuthorizeDotNetPay;
-use BookPanda\PaymentGateway\Base\Gateways\BillPlzPay;
-use BookPanda\PaymentGateway\Base\Gateways\CashFreePay;
-use BookPanda\PaymentGateway\Base\Gateways\CinetPay;
-use BookPanda\PaymentGateway\Base\Gateways\FlutterwavePay;
-use BookPanda\PaymentGateway\Base\Gateways\InstamojoPay;
-use BookPanda\PaymentGateway\Base\Gateways\Iyzipay;
-use BookPanda\PaymentGateway\Base\Gateways\KineticPay;
-use BookPanda\PaymentGateway\Base\Gateways\MidtransPay;
-use BookPanda\PaymentGateway\Base\Gateways\MolliePay;
-use BookPanda\PaymentGateway\Base\Gateways\PagaliPay;
-use BookPanda\PaymentGateway\Base\Gateways\PayFastPay;
-use BookPanda\PaymentGateway\Base\Gateways\PaymobPay;
-use BookPanda\PaymentGateway\Base\Gateways\PaypalPay;
-use BookPanda\PaymentGateway\Base\Gateways\PaystackPay;
-use BookPanda\PaymentGateway\Base\Gateways\PayTabsPay;
-use BookPanda\PaymentGateway\Base\Gateways\PaytmPay;
-use BookPanda\PaymentGateway\Base\Gateways\PayUmoneyPay;
-use BookPanda\PaymentGateway\Base\Gateways\RazorPay;
-use BookPanda\PaymentGateway\Base\Gateways\SaltPay;
-use BookPanda\PaymentGateway\Base\Gateways\Senangpay;
-use BookPanda\PaymentGateway\Base\Gateways\SitesWayPay;
-use BookPanda\PaymentGateway\Base\Gateways\SquarePay;
-use BookPanda\PaymentGateway\Base\Gateways\StripePay;
-use BookPanda\PaymentGateway\Base\Gateways\MercadoPagoPay;
-use BookPanda\PaymentGateway\Base\Gateways\Toyyibpay;
-use BookPanda\PaymentGateway\Base\Gateways\TransactionCloudPay;
-use BookPanda\PaymentGateway\Base\Gateways\WiPay;
-use BookPanda\PaymentGateway\Base\Gateways\ZitoPay;
+use SyncMaster\PaymentGateway\Base\Gateways\AuthorizeDotNetPay;
+use SyncMaster\PaymentGateway\Base\Gateways\BillPlzPay;
+use SyncMaster\PaymentGateway\Base\Gateways\CashFreePay;
+use SyncMaster\PaymentGateway\Base\Gateways\CinetPay;
+use SyncMaster\PaymentGateway\Base\Gateways\FlutterwavePay;
+use SyncMaster\PaymentGateway\Base\Gateways\InstamojoPay;
+use SyncMaster\PaymentGateway\Base\Gateways\Iyzipay;
+use SyncMaster\PaymentGateway\Base\Gateways\KineticPay;
+use SyncMaster\PaymentGateway\Base\Gateways\MidtransPay;
+use SyncMaster\PaymentGateway\Base\Gateways\MolliePay;
+use SyncMaster\PaymentGateway\Base\Gateways\PagaliPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PayFastPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PaymobPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PaypalPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PaystackPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PayTabsPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PaytmPay;
+use SyncMaster\PaymentGateway\Base\Gateways\PayUmoneyPay;
+use SyncMaster\PaymentGateway\Base\Gateways\RazorPay;
+use SyncMaster\PaymentGateway\Base\Gateways\SaltPay;
+use SyncMaster\PaymentGateway\Base\Gateways\Senangpay;
+use SyncMaster\PaymentGateway\Base\Gateways\SitesWayPay;
+use SyncMaster\PaymentGateway\Base\Gateways\SquarePay;
+use SyncMaster\PaymentGateway\Base\Gateways\StripePay;
+use SyncMaster\PaymentGateway\Base\Gateways\MercadoPagoPay;
+use SyncMaster\PaymentGateway\Base\Gateways\Toyyibpay;
+use SyncMaster\PaymentGateway\Base\Gateways\TransactionCloudPay;
+use SyncMaster\PaymentGateway\Base\Gateways\WiPay;
+use SyncMaster\PaymentGateway\Base\Gateways\ZitoPay;
 
 /**
  * @see SquarePay

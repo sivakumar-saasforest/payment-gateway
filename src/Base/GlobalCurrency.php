@@ -1,6 +1,6 @@
 <?php
 
-namespace  BookPanda\PaymentGateway\Base;
+namespace  SyncMaster\PaymentGateway\Base;
 
 /**
  *  List of available currency in this package

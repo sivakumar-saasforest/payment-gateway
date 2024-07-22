@@ -1,14 +1,14 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
-use  BookPanda\PaymentGateway\Base\PaymentGatewayBase;
+use  SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
 use Stripe\Charge;
 use Stripe\Stripe;
 use Stripe\StripeClient;
 use Stripe\Checkout\Session;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 
 class StripePay extends PaymentGatewayBase
 {

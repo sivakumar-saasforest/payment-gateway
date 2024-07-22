@@ -1,8 +1,8 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Traits;
+namespace SyncMaster\PaymentGateway\Traits;
 
-use BookPanda\PaymentGateway\Base\Gateways\CashFreePay;
+use SyncMaster\PaymentGateway\Base\Gateways\CashFreePay;
 
 trait CurrencySupport
 {

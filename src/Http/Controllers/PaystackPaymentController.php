@@ -1,11 +1,11 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Http\Controllers;
+namespace SyncMaster\PaymentGateway\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Unicodeveloper\Paystack\Facades\Paystack;
-use BookPanda\PaymentGateway\Facades\XgPaymentGateway;
+use SyncMaster\PaymentGateway\Facades\XgPaymentGateway;
 
 class PaystackPaymentController extends Controller
 {

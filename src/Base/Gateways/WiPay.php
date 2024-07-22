@@ -1,17 +1,17 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
-use BookPanda\PaymentGateway\Base\PaymentGatewayHelpers;
-use BookPanda\PaymentGateway\Traits\ConvertUsdSupport;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayHelpers;
+use SyncMaster\PaymentGateway\Traits\ConvertUsdSupport;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 use Illuminate\Support\Str;
 
 class WiPay extends PaymentGatewayBase

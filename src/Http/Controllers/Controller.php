@@ -1,6 +1,6 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Http\Controllers;
+namespace SyncMaster\PaymentGateway\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

@@ -1,6 +1,6 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Traits;
+namespace SyncMaster\PaymentGateway\Traits;
 
 trait PaymentEnvironment
 {

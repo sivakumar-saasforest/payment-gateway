@@ -1,10 +1,10 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Tests\Gateways;
+namespace SyncMaster\PaymentGateway\Tests\Gateways;
 
 use Illuminate\Support\Facades\Http;
-use BookPanda\PaymentGateway\Tests\TestCase;
-use BookPanda\PaymentGateway\Base\Gateways\ZitoPay;
+use SyncMaster\PaymentGateway\Tests\TestCase;
+use SyncMaster\PaymentGateway\Base\Gateways\ZitoPay;
 
 class ZitoPayTest extends TestCase
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Base\Gateways;
+namespace SyncMaster\PaymentGateway\Base\Gateways;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Session;
-use BookPanda\PaymentGateway\Base\GlobalCurrency;
-use BookPanda\PaymentGateway\Base\PaymentGatewayBase;
+use SyncMaster\PaymentGateway\Base\GlobalCurrency;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayBase;
 use Srmklive\PayPal\Services\PayPal as PayPalClient;
-use BookPanda\PaymentGateway\Base\PaymentGatewayHelpers;
-use BookPanda\PaymentGateway\Traits\ConvertUsdSupport;
-use BookPanda\PaymentGateway\Traits\CurrencySupport;
-use BookPanda\PaymentGateway\Traits\PaymentEnvironment;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayHelpers;
+use SyncMaster\PaymentGateway\Traits\ConvertUsdSupport;
+use SyncMaster\PaymentGateway\Traits\CurrencySupport;
+use SyncMaster\PaymentGateway\Traits\PaymentEnvironment;
 use net\authorize\api\contract\v1 as AnetAPI;
 use net\authorize\api\controller as AnetController;
 
@@ -219,7 +219,7 @@ class AuthorizeDotNetPay extends PaymentGatewayBase
                 'order_type' => request()->get('order_type')
             ]);
         }
-        
+
         return $this->verified_data([
             'status' => 'failed',
             'order_id' => PaymentGatewayHelpers::unwrapped_id(request()->get('order_id')),

@@ -1,11 +1,11 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Facades;
+namespace SyncMaster\PaymentGateway\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use BookPanda\PaymentGateway\Base\Gateways\InstamojoPay;
-use BookPanda\PaymentGateway\Base\PaymentGatewayHelpers;
-use BookPanda\PaymentGateway\Base\Gateways\SquarePay;
+use SyncMaster\PaymentGateway\Base\Gateways\InstamojoPay;
+use SyncMaster\PaymentGateway\Base\PaymentGatewayHelpers;
+use SyncMaster\PaymentGateway\Base\Gateways\SquarePay;
 
 /**
  * @see GlobalCurrency

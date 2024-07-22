@@ -1,6 +1,6 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Console\Commands;
+namespace SyncMaster\PaymentGateway\Console\Commands;
 
 use Illuminate\Console\Command;
 

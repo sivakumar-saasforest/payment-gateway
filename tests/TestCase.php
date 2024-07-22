@@ -1,6 +1,6 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Tests;
+namespace SyncMaster\PaymentGateway\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Illuminate\Foundation\Application;
@@ -22,7 +22,7 @@ abstract class TestCase extends OrchestraTestCase
     protected function getPackageProviders($app)
     {
         return [
-            \BookPanda\PaymentGateway\Providers\PaymentGatewayServiceProvider::class
+            \SyncMaster\PaymentGateway\Providers\PaymentGatewayServiceProvider::class
         ];
     }
 }

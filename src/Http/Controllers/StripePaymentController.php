@@ -1,8 +1,8 @@
 <?php
 
-namespace BookPanda\PaymentGateway\Http\Controllers;
+namespace SyncMaster\PaymentGateway\Http\Controllers;
 
-use BookPanda\PaymentGateway\Facades\XgPaymentGateway;
+use SyncMaster\PaymentGateway\Facades\XgPaymentGateway;
 use Illuminate\Http\Request;
 
 class StripePaymentController extends Controller
