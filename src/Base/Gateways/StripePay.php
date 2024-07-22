@@ -38,12 +38,6 @@ class StripePay extends PaymentGatewayBase
         return $this->public_key;
     }
 
-
-    /**
-     * this payment gateway will not work without this package
-     * @https://github.com/stripe/stripe-php
-     * @since .0.01
-     * */
     public function charge_amount($amount)
     {
         $return_amount = $amount;
@@ -54,6 +48,7 @@ class StripePay extends PaymentGatewayBase
             return $amount * 100;
         }
     }
+
     private function zero_decimal_currencies()
     {
         return [
@@ -96,22 +91,6 @@ class StripePay extends PaymentGatewayBase
         return ['status' => 'failed', 'order_id' => $stripe_order_id];
     }
 
-    /**
-     *
-     * @param array $args
-     * required param list
-     *
-     * product_name
-     * amount
-     * description
-     * ipn_url
-     * cancel_url
-     * order_id
-     *
-     * @return array
-     * @throws \Stripe\Exception\ApiErrorException
-     * @since 0.0.1
-     */
     public function charge_customer(array $args)
     {
         return $this->stripe_view($args);
@@ -161,163 +140,18 @@ class StripePay extends PaymentGatewayBase
         return ['id' => $session->id];
     }
 
-    /**
-     * this will refund payment gateway charge currency
-     * @since 0.0.1
-     * */
     public function supported_currency_list(): array
     {
         return [
-            'USD',
-            'EUR',
-            'INR',
-            'IDR',
-            'AUD',
-            'SGD',
-            'JPY',
-            'GBP',
-            'MYR',
-            'PHP',
-            'THB',
-            'KRW',
-            'NGN',
-            'GHS',
-            'BRL',
-            'BIF',
-            'CAD',
-            'CDF',
-            'CVE',
-            'GHP',
-            'GMD',
-            'GNF',
-            'KES',
-            'LRD',
-            'MWK',
-            'MZN',
-            'RWF',
-            'SLL',
-            'STD',
-            'TZS',
-            'UGX',
-            'XAF',
-            'XOF',
-            'ZMK',
-            'ZMW',
-            'ZWD',
-            'AED',
-            'AFN',
-            'ALL',
-            'AMD',
-            'ANG',
-            'AOA',
-            'ARS',
-            'AWG',
-            'AZN',
-            'BAM',
-            'BBD',
-            'BDT',
-            'BGN',
-            'BMD',
-            'BND',
-            'BOB',
-            'BSD',
-            'BWP',
-            'BZD',
-            'CHF',
-            'CNY',
-            'CLP',
-            'COP',
-            'CRC',
-            'CZK',
-            'DJF',
-            'DKK',
-            'DOP',
-            'DZD',
-            'EGP',
-            'ETB',
-            'FJD',
-            'FKP',
-            'GEL',
-            'GIP',
-            'GTQ',
-            'GYD',
-            'HKD',
-            'HNL',
-            'HRK',
-            'HTG',
-            'HUF',
-            'ILS',
-            'ISK',
-            'JMD',
-            'KGS',
-            'KHR',
-            'KMF',
-            'KYD',
-            'KZT',
-            'LAK',
-            'LBP',
-            'LKR',
-            'LSL',
-            'MAD',
-            'MDL',
-            'MGA',
-            'MKD',
-            'MMK',
-            'MNT',
-            'MOP',
-            'MRO',
-            'MUR',
-            'MVR',
-            'MXN',
-            'NAD',
-            'NIO',
-            'NOK',
-            'NPR',
-            'NZD',
-            'PAB',
-            'PEN',
-            'PGK',
-            'PKR',
-            'PLN',
-            'PYG',
-            'QAR',
-            'RON',
-            'RSD',
-            'RUB',
-            'SAR',
-            'SBD',
-            'SCR',
-            'SEK',
-            'SHP',
-            'SOS',
-            'SRD',
-            'SZL',
-            'TJS',
-            'TRY',
-            'TTD',
-            'TWD',
-            'UAH',
-            'UYU',
-            'UZS',
-            'VND',
-            'VUV',
-            'WST',
-            'XCD',
-            'XPF',
-            'YER',
-            'ZAR'
+            'USD', 'EUR', 'INR', 'IDR', 'AUD', 'SGD', 'JPY', 'GBP', 'MYR', 'PHP', 'THB', 'KRW', 'NGN', 'GHS', 'BRL', 'BIF', 'CAD', 'CDF', 'CVE', 'GHP', 'GMD', 'GNF', 'KES', 'LRD', 'MWK', 'MZN', 'RWF', 'SLL', 'STD', 'TZS', 'UGX', 'XAF', 'XOF', 'ZMK', 'ZMW', 'ZWD', 'AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AWG', 'AZN', 'BAM', 'BBD', 'BDT', 'BGN', 'BMD', 'BND', 'BOB', 'BSD', 'BWP', 'BZD', 'CHF', 'CNY', 'CLP', 'COP', 'CRC', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EGP', 'ETB', 'FJD', 'FKP', 'GEL', 'GIP', 'GTQ', 'GYD', 'HKD', 'HNL', 'HRK', 'HTG', 'HUF', 'ILS', 'ISK', 'JMD', 'KGS', 'KHR', 'KMF', 'KYD', 'KZT', 'LAK', 'LBP', 'LKR', 'LSL', 'MAD', 'MDL', 'MGA', 'MKD', 'MMK', 'MNT', 'MOP', 'MRO', 'MUR', 'MVR', 'MXN', 'NAD', 'NIO', 'NOK', 'NPR', 'NZD', 'PAB', 'PEN', 'PGK', 'PKR', 'PLN', 'PYG', 'QAR', 'RON', 'RSD', 'RUB', 'SAR', 'SBD', 'SCR', 'SEK', 'SHP', 'SOS', 'SRD', 'SZL', 'TJS', 'TRY', 'TTD', 'TWD', 'UAH', 'UYU', 'UZS', 'VND', 'VUV', 'WST', 'XCD', 'XPF', 'YER', 'ZAR'
         ];
     }
-    /**
-     * this will refund payment gateway charge currency
-     * */
+
     public function charge_currency()
     {
         return $this->getCurrency();
     }
-    /**
-     * this will refund payment gateway name
-     * */
+
     public function gateway_name(): string
     {
         return 'stripe';
@@ -355,5 +189,38 @@ class StripePay extends PaymentGatewayBase
         ]);
 
         return $customer;
+    }
+
+    public function subscription($user, $priceId, $successURL, $failedURL)
+    {
+        \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
+        $session = \Stripe\Checkout\Session::create([
+            'success_url' => $successURL,
+            'cancel_url' => $failedURL,
+            'mode' => 'subscription',
+            'customer_email' => $user->email,
+            'line_items' => [
+                [
+                    'price' => $priceId,
+                    'quantity' => 1,
+                ]
+            ],
+            'subscription_data' => [
+                'metadata' => [
+                    'user_id' => $user->id,
+                    'plan_id' => $priceId
+                ]
+            ]
+        ]);
+
+        return $session->url;
+    }
+
+    public function sessions_retrieve($sessionId)
+    {
+        $stripe = new StripeClient(env('STRIPE_SECRET_KEY'));
+        $response = $stripe->checkout->sessions->retrieve($sessionId, []);
+
+        return $response;
     }
 }

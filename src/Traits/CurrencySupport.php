@@ -13,18 +13,23 @@ trait CurrencySupport
     {
         return  $this->currency;
     }
+
     public function getExchangeRate()
     {
         return $this->exchange_rate;
     }
+
     public function setExchangeRate($rate)
     {
         $this->exchange_rate = $rate;
+
         return $this;
     }
+
     public function setCurrency($currency = "USD")
     {
         $this->currency = $currency;
+
         return $this;
     }
 

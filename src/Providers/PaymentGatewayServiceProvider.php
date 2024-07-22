@@ -31,7 +31,7 @@ class PaymentGatewayServiceProvider extends ServiceProvider
 
         $this->mergeConfigFrom(__DIR__ . '/../../config/PaymentGateway.php', 'PaymentGateway');
 
-        app()->bind('XgPaymentGateway', function () {
+        app()->bind('SyncMasterPaymentGateway', function () {
             return new PaymentGatewayHelpers();
         });
     }

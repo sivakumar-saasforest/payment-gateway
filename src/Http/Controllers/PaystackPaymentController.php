@@ -5,7 +5,7 @@ namespace SyncMaster\PaymentGateway\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Unicodeveloper\Paystack\Facades\Paystack;
-use SyncMaster\PaymentGateway\Facades\XgPaymentGateway;
+use SyncMaster\PaymentGateway\Facades\SyncMasterPaymentGateway;
 
 class PaystackPaymentController extends Controller
 {

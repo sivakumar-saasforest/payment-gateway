@@ -109,10 +109,10 @@ use SyncMaster\PaymentGateway\Base\Gateways\SquarePay;
  * @method static paymob()
  *
  */
-class XgPaymentGateway extends Facade
+class SyncMasterPaymentGateway extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'XgPaymentGateway';
+        return 'SyncMasterPaymentGateway';
     }
 }
